@@ -7,6 +7,8 @@
     <meta name="description" content="Personal website of Victor Daniel">
     <title>danielnaranjo86 Site</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -31,10 +33,10 @@
                     <label for="usernumber">Which whole number is best?</label>
                     <input type="number" name="usernumber" id="usernumber" min="1"><br><br>
                     <label for="userdate">Which day is best?</label>
-                    <input type="date" name="userdate" id="useddate"><br><br>
+                    <input type="date" name="userdate" id="userdate"><br><br>
                     <label for="userbear">Which bear is best?</label>
                     <select name="userbear" id="userbear">
-                        <option value="" selected>&nbsp</option>
+                        <option value="" selected>&nbsp;</option>
                         <option value="Black bear">Black</option>
                         <option value="Brown bear">Brown</option>
                         <option value="Care bear">Care</option>
@@ -45,13 +47,17 @@
                     <fieldset>
                         <legend>Do you like radio buttons?</legend>
                         <ul>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="Yes" id="pet_yes"><label for="pet_cat">Yes</label></li>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="No" id="pet_no"><label for="pet_dog">No</label></li>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="None of your business" id="pet_none"><label for="pet_other">None of your business</label></li>
+                            <li><input type="radio" name="enjoys_radio_buttons" value="Yes" id="yes"><label
+                                    for="yes">Yes</label></li>
+                            <li><input type="radio" name="enjoys_radio_buttons" value="No" id="not"><label
+                                    for="not">No</label></li>
+                            <li><input type="radio" name="enjoys_radio_buttons" value="None" id="none"><label
+                                    for="none">None of your business</label></li>
                         </ul>
                     </fieldset><br>
                     <label for="meaninglife">What is the meaning of life?</label>
-                    <textarea name="meaninglife" id="meaninglife" cols="50" rows="5">Enter the correct answer here</textarea><br><br>
+                    <textarea name="meaninglife" id="meaninglife" cols="50" rows="5"
+                        placeholder="Enter the correct answer here"></textarea><br><br>
                     <button type="submit">Send</button>
                 </form>
             </div>
