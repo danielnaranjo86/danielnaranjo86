@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="danielnaranjo86">
+    <meta name="description" content="Personal website of Victor Daniel">
+    <title>danielnaranjo86 Site</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="width-wrap">
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1>Survey</h1>
+                <form method="post" action="https://formspree.io/f/xqapzdev">
+                    <p id="control-1">
+                        <label for="username">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+                        <input type="text" name="username" id="username" required aria-required="true">
+                    </p>
+                    <p id="control-2">
+                        <label for="useremail">What is your email address? <abbr title="required" aria-label="required">*</abbr></label>
+                        <input type="email" name="useremail" id="useremail" required aria-required="true">
+                    </p>
+                    <p id="control-3">
+                        <label for="usernumber">Which whole number is best?</label>
+                        <input type="number" name="usernumber" id="usernumber" step="1" aria-valuemin="0" min="1">
+                    </p>
+                    <p id="control-4">
+                        <label for="userdate">Which day is best?</label>
+                        <input type="date" name="userdate" id="useddate">
+                    </p>
+                    <p id="control-5">
+                        <label for="userbear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+                        <select name="userbear" id="userbear" required aria-required="true">
+                            <option selected value=""> </option>
+                            <option value="Black">Black</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Care">Care</option>
+                            <option value="Panda">Panda</option>
+                            <option value="Polar">Polar</option>
+                            <option value="Teddy">Teddy</option>
+                        </select>
+                    </p>
+                    <fieldset id="control-6">
+                        <legend>Do you like radio buttons?</legend>
+                        <ul>
+                            <li>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="yes" value="yes" >
+                            </li>
+                            <li>
+                                <label for="no">No</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="no" value="no" >
+                            </li>
+                            <li>
+                                <label for="maybe">None of your business</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="maybe" value="?" >
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p id="control-7">
+                        <label for="meaninglife">What is the meaning of life?</label>
+                        <textarea
+                            name="meaninglife"
+                            id="meaninglife"
+                            placeholder="Enter the correct answer here"
+                            cols="50"
+                            rows="5"
+                        ></textarea>
+                    </p>
+                    <p id="control-8">
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <blockquote>
+                "Without music, life would be a mistake."
+                <br>
+                <cite>&mdash; <span class="author">Friedrich Nietzsche</span></cite>
+            </blockquote>
+            <p>© 2025
+                <a href="mailto:23096864@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Victor Daniel
+                    Naranjo Martinez</a>
+            </p>
+            <picture>
+                <source srcset="images/sc-logo.svg" type="image/svg+xml">
+                <img src="images/sc-logo.png" srcset="images/sc-logo_105.png 1.5x, images/sc-logo_140.png 2x"
+                    alt="Sault College logo" width="70">
+            </picture>
+        </footer>
+        <a href="#top" title="Back to top">◤
+        </a>
+    </div>
+</body>
+
+</html>
