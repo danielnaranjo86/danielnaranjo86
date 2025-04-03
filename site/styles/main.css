@@ -18,6 +18,12 @@
 body {
     background-color: #2E8BC0;
     color: #0C2D48;
+    font-family: 'Scope One', serif;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poiret One', sans-serif;
 }
 
 h1,
@@ -26,12 +32,34 @@ h3 {
     color: #0C2D48;
 }
 
+h1 {
+    background: linear-gradient(to right, #090979, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
 a {
     color: #2E8Bc0;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: upper-roman;
 }
 
 nav a {
     color: #145DA0;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 ::selection {
@@ -141,4 +169,53 @@ input:invalid,
 textarea:invalid {
     background-color: rgba(255, 0, 0, 0.1);
     border: 1px solid red;
+}
+
+iframe {
+    border-radius: 2em 0 2em 0;
+}
+
+ul.radio-list {
+    padding: 0;
+    list-style: none;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.bio table {
+    grid-column: span 3;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+.bio table caption {
+    caption-side: bottom;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bio a:first-of-type img {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 183, 255, 0.918);
+}
+
+footer{
+    font-size: 75%;
+    text-align: center;
+}
+
+a[href="#top"] {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+a[href="#top"]:hover{
+    text-decoration: none;
 }
