@@ -25,40 +25,65 @@
         <main>
             <div>
                 <h1>Survey</h1>
-                <form action="https://formspree.io/f/xqapzdev" method="POST">
-                    <label for="username">What is your name?</label>
-                    <input type="text" name="username" id="username"><br><br>
-                    <label for="useremail">What is your email?</label>
-                    <input type="email" name="useremail" id="useremail"><br><br>
-                    <label for="usernumber">Which whole number is best?</label>
-                    <input type="number" name="usernumber" id="usernumber" min="1"><br><br>
-                    <label for="userdate">Which day is best?</label>
-                    <input type="date" name="userdate" id="userdate"><br><br>
-                    <label for="userbear">Which bear is best?</label>
-                    <select name="userbear" id="userbear">
-                        <option value="" selected>&nbsp;</option>
-                        <option value="Black bear">Black</option>
-                        <option value="Brown bear">Brown</option>
-                        <option value="Care bear">Care</option>
-                        <option value="Panda bear">Panda</option>
-                        <option value="Polar bear">Polar</option>
-                        <option value="Teddy bear">Teddy</option>
-                    </select><br><br>
-                    <fieldset>
+                <form method="post" action="https://formspree.io/f/xqapzdev">
+                    <p id="control-1">
+                        <label for="username">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+                        <input type="text" name="username" id="username" required aria-required="true">
+                    </p>
+                    <p id="control-2">
+                        <label for="useremail">What is your email address? <abbr title="required" aria-label="required">*</abbr></label>
+                        <input type="email" name="useremail" id="useremail" required aria-required="true">
+                    </p>
+                    <p id="control-3">
+                        <label for="usernumber">Which whole number is best?</label>
+                        <input type="number" name="usernumber" id="usernumber" step="1" aria-valuemin="0" min="1">
+                    </p>
+                    <p id="control-4">
+                        <label for="userdate">Which day is best?</label>
+                        <input type="date" name="userdate" id="useddate">
+                    </p>
+                    <p id="control-5">
+                        <label for="userbear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+                        <select name="userbear" id="userbear" required aria-required="true">
+                            <option selected value=""> </option>
+                            <option value="Black">Black</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Care">Care</option>
+                            <option value="Panda">Panda</option>
+                            <option value="Polar">Polar</option>
+                            <option value="Teddy">Teddy</option>
+                        </select>
+                    </p>
+                    <fieldset id="control-6">
                         <legend>Do you like radio buttons?</legend>
                         <ul>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="Yes" id="yes"><label
-                                    for="yes">Yes</label></li>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="No" id="not"><label
-                                    for="not">No</label></li>
-                            <li><input type="radio" name="enjoys_radio_buttons" value="None" id="none"><label
-                                    for="none">None of your business</label></li>
+                            <li>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="yes" value="yes" >
+                            </li>
+                            <li>
+                                <label for="no">No</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="no" value="no" >
+                            </li>
+                            <li>
+                                <label for="maybe">None of your business</label>
+                                <input type="radio" name="enjoys_radio_buttons" id="maybe" value="?" >
+                            </li>
                         </ul>
-                    </fieldset><br>
-                    <label for="meaninglife">What is the meaning of life?</label>
-                    <textarea name="meaninglife" id="meaninglife" cols="50" rows="5"
-                        placeholder="Enter the correct answer here"></textarea><br><br>
-                    <button type="submit">Send</button>
+                    </fieldset>
+                    <p id="control-7">
+                        <label for="meaninglife">What is the meaning of life?</label>
+                        <textarea
+                            name="meaninglife"
+                            id="meaninglife"
+                            placeholder="Enter the correct answer here"
+                            cols="50"
+                            rows="5"
+                        ></textarea>
+                    </p>
+                    <p id="control-8">
+                        <button type="submit">Send</button>
+                    </p>
                 </form>
             </div>
         </main>
