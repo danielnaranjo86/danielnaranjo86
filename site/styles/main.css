@@ -10,7 +10,7 @@
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    border-top: none;
+    border: none;
     margin-bottom: 3em;
     background-color: #B1D4E0;
 }
@@ -139,6 +139,6 @@ button[type="submit"]:hover {
 
 input:invalid,
 textarea:invalid {
-    background-color: (255, 0, 0, 0.1);
+    background-color: rgba(255, 0, 0, 0.1);
     border: 1px solid red;
 }
