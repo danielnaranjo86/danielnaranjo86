@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="danielnaranjo86">
     <meta name="description" content="Personal website of Victor Daniel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>danielnaranjo86 Site</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -20,6 +21,26 @@
         footer {
             clear: both
         }
+
+        .float-left {
+            float: left;
+            margin: 1rem;
+        }
+
+        .float-right {
+            float: right;
+            margin: 1rem;
+        }
+
+        @media (max-width: 600px) {
+
+            .float-left,
+            .float-right {
+                float: none;
+                display: block;
+                margin: 1rem auto;
+            }
+        }
     </style>
 </head>
 
@@ -27,6 +48,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
@@ -49,7 +72,7 @@
                 Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
                 integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
                 conubia nostra inceptos himenaeos.</p>
-            <p><img src="https://loremflickr.com/320/240" alt="Random Image 1" style="float:left; margin-right: 1em;">
+            <p><img src="https://loremflickr.com/320/240" alt="Random Image 1" class="float-left">
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
                 placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
@@ -61,7 +84,7 @@
                 Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
                 integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
                 conubia nostra inceptos himenaeos.</p>
-            <p><img src="https://loremflickr.com/320/240" alt="Random Image 2" style="float:right; margin-left: 1em;">
+            <p><img src="https://loremflickr.com/320/240" alt="Random Image 2" class="float-right">
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
                 placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
